@@ -21,7 +21,7 @@ docker-compose up
 ```
 docker ps
 ```
-<img src="img/docker_ps.jpg" width=500>
+<img src="img/docker_ps.jpg">
 
 #### 4. connect to mysql server using docker bash interactive
 ```
@@ -29,11 +29,11 @@ docker exec -i -t 4b6ed87f74c5 /bin/bash
 ```
 
 #### 5. connect to mysql server using password defined in env file
-<img src="img/binbash.jpg" width=500>
+<img src="img/binbash.jpg">
 
 
 #### 6. check if the database and all tables contains data
-<img src="img/tables.jpg" width=500>
+<img src="img/tables.jpg">
 
 
 ## simple sql queries for analysis
@@ -47,7 +47,7 @@ INNER JOIN Course co ON cl.CourseID = co.ID
 INNER JOIN Lecturer lc ON co.LecturerID = lc.ID
 INNER JOIN Department dp ON lc.DepartmentID = dp.ID;
 ```
-<img src="img/sql1.jpg" width=500>
+<img src="img/sql1.jpg">
 
 #### 2. Select Total Course by Lecturer
 ```SQL
@@ -57,7 +57,7 @@ LEFT JOIN Course co ON lc.ID = co.LecturerID
 GROUP BY 1 
 ORDER BY 2 DESC;
 ```
-<img src="img/sql2.jpg" width=500>
+<img src="img/sql2.jpg">
 
 #### 3. Select Total Course by Student
 ```SQL
@@ -67,7 +67,7 @@ INNER JOIN Course co ON cl.CourseID = co.ID
 GROUP BY 1 
 ORDER BY 2 DESC;
 ```
-<img src="img/sql3.jpg" width=500>
+<img src="img/sql3.jpg">
 
 #### 4. Select Course Name by Total Student and Total Lecturer
 ```SQL
@@ -78,4 +78,4 @@ LEFT JOIN Student st ON cl.StudentID = st.ID
 GROUP BY 1
 ORDER BY 2 DESC;
 ```
-<img src="img/sql4.jpg" width=500>
+<img src="img/sql4.jpg">
