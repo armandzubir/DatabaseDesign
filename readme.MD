@@ -1,6 +1,6 @@
 # Database Design using Entity Relationship Diagram (ERD) for University Database System
 
-<img src="img/Diagram.jpg" width=500>
+<img src="img/Diagram.jpg">
 
 ## What I used in this project: 
 - Docker v24.0.5
@@ -15,7 +15,7 @@ docker-compose up
 ```
 
 #### 2. the log will show message that mysql server is ready for connection
-<img src="img/ready_for_connection.jpg" width=500>
+<img src="img/ready_for_connection.jpg">
 
 #### 3. make sure check docker container is running
 ```
